@@ -491,3 +491,17 @@ table.grades td { color: var(--muted); }
 .mosaic .m5 { grid-column: span 7; } .mosaic .m6 { grid-column: span 5; }
 @media (max-width: 760px) { .mosaic .m5, .mosaic .m6 { grid-column: span 1; } }
 @media (max-width: 760px) { .mosaic .m5[style] { grid-column: span 2 !important; } }
+
+/* ───────── page de remerciement ───────── */
+.thanks { background: var(--ink); color: var(--paper); }
+.thanks::after { display: none; }
+.thanks-wrap { min-height: 100dvh; display: grid; place-items: center; padding: 40px var(--gutter); position: relative; overflow: hidden; }
+.thanks-wrap::before { content: ''; position: absolute; width: 80vmin; aspect-ratio: 1; background: radial-gradient(closest-side, rgba(180, 138, 67, 0.25), transparent); pointer-events: none; }
+.thanks-card { position: relative; text-align: center; max-width: 640px; display: flex; flex-direction: column; align-items: center; gap: 26px; }
+.thanks-card .brand { color: var(--paper); }
+.thanks-card .brand svg { color: var(--gold-soft); }
+.thanks-card .brand b { font-family: var(--serif); font-size: 1.4rem; }
+.thanks .check { width: 76px; height: 76px; border-radius: 50%; display: grid; place-items: center; color: var(--gold-soft); box-shadow: inset 0 0 0 1px rgba(216, 184, 120, 0.4); background: rgba(216, 184, 120, 0.08); margin-top: 14px; }
+.thanks h1 { font-size: clamp(2.3rem, 6vw, 3.8rem); }
+.thanks h1 em { color: var(--gold-soft); }
+.thanks .lede { color: var(--muted-dark); }
