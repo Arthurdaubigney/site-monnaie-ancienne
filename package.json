@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Maison Numismatique & Héritage — site vitrine multi-pages",
+  "description": "Maison Numismatique — site vitrine multi-pages",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
