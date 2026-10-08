@@ -23,7 +23,7 @@ function marquee(kind, attrs) {
 }
 
 function highlights() {
-  const pick = [...pieces.slice(0, 3).map((i) => ({ ...i, href: '/pieces.html' })), ...billets.slice(0, 3).map((i) => ({ ...i, href: '/billets.html' }))];
+  const pick = [...pieces.slice(0, 3).map((i) => ({ ...i, href: '/pieces' })), ...billets.slice(0, 3).map((i) => ({ ...i, href: '/billets' }))];
   return `<ul class="hl-grid">${pick
     .map(
       (i, n) =>
