@@ -42,7 +42,7 @@ function includes() {
         const active = file.replace('.html', '');
         const read = (n) => readFileSync(resolve(root, 'src/partials', n + '.html'), 'utf8');
         return html
-          .replace(/<!--#include (\w+)-->/g, (_, n) => read(n))
+          .replace(/<!--#include ([\w-]+)-->/g, (_, n) => read(n))
           .replace(/<!--#marquee (\w+)([^>]*)-->/g, (_, k, a) => marquee(k, a))
           .replace(/<!--#highlights-->/g, () => highlights())
           .replace(/\{\{SITE\}\}/g, SITE)

@@ -16,14 +16,14 @@ export const pieces = [
 export const billets = [
   { name: '500 Nouveaux Francs Molière', est: 'Estimé de 1 000 à 15 000 €', img: 'ref/billet-moliere', fit: 'contain' },
   { name: '1 000 Francs Minerve et Hercule', est: 'Estimé de 500 à 3 000 €', img: 'ref/billet-mille-francs', fit: 'contain' },
-  { name: '5 Nouveaux Francs Victor Hugo', est: 'Variantes rares : jusqu’à 50 000 €', img: 'ref/billet-victor-hugo', fit: 'contain' },
+  { name: '5 Nouveaux Francs Victor Hugo', est: 'Jusqu’à 50 000 €', img: 'ref/billet-victor-hugo', fit: 'contain' },
   { name: '100 Francs Banque de l’Indochine', est: 'Rareté R4', img: 'ref/billet-indochine', pos: '50% 25%' },
   { name: '500 Francs Germinal 1806', est: 'Estimé à 12 000 €', img: 'billets-anciens', pos: '75% 85%' },
   { name: 'Billet 5 000 Francs Empire Français', est: 'Rareté R5', img: 'billets-anciens', pos: '20% 15%' },
   { name: '1 000 Dollars Treasury Note 1890', est: 'Jusqu’à 3 000 000 €', img: 'ref/billet-us-1890', fit: 'contain' },
   { name: 'Banque d’Angleterre 1 000 000 £', est: 'Estimé de 20 000 à 100 000 €', img: 'ref/billet-bank-england', fit: 'contain' },
   { name: '1 000 Francs Suisses', est: 'Estimé de 1 100 à 3 500 €', img: 'ref/billet-suisse', fit: 'contain' },
-  { name: '1 Dollar Canada 1954', est: 'Séries rares : jusqu’à 8 000 €', img: 'ref/billet-canada', fit: 'contain' }
+  { name: '1 Dollar Canada 1954', est: 'Jusqu’à 8 000 €', img: 'ref/billet-canada', fit: 'contain' }
 ];
 
 export const SITE = 'https://www.maison-numismatique-heritage.fr';
