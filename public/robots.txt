@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.maison-numismatique-heritage.fr/sitemap.xml
