@@ -31,9 +31,17 @@ if ('IntersectionObserver' in window) {
    (présent sur chaque page). Une fois renseigné :
    - contact.html affiche le formulaire dans l'emplacement #tally-slot ;
    - tous les boutons « Demander une estimation » (.js-estimation) ouvrent la popup Tally
-     sur les autres pages. */
+     sur les autres pages.
+   Dans les deux cas, l'envoi du formulaire redirige vers /merci (suivi des conversions Google Ads). */
 const formId = document.querySelector('meta[name="tally-form-id"]')?.content.trim();
 if (formId) {
+  const onTallyMessage = (e) => {
+    if (!/^https:\/\/tally\.so$/.test(e.origin)) return;
+    let d = e.data;
+    if (typeof d === 'string') { try { d = JSON.parse(d); } catch { return; } }
+    if (d?.event === 'Tally.FormSubmitted') location.assign('/merci');
+  };
+  addEventListener('message', onTallyMessage);
   const slot = document.getElementById('tally-slot');
   const loadWidget = (cb) => {
     if (window.Tally) return cb();
