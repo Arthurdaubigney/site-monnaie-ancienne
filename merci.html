@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--#include gtag-->
   <title>Merci pour votre demande</title>
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="theme-color" content="#0e1512">
@@ -12,13 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <script type="module" src="/src/main.js"></script>
 
-  <!-- ─────────────────────────────────────────────────────────────
-       GOOGLE ADS — SUIVI DE CONVERSION
-       Page de remerciement : Tally redirige ici après l'envoi du formulaire.
-       Coller ci-dessous le code de la conversion Google Ads :
-       1) la balise globale gtag.js (si elle n'est pas déjà chargée sur le site),
-       2) l'extrait « événement » (gtag('event', 'conversion', {...})).
-       ───────────────────────────────────────────────────────────── -->
+  <!-- Suivi de conversion Google Ads : la balise globale (gtag.js) est chargée via le partial gtag ci-dessus.
+       Pour comptabiliser l'envoi du formulaire, ajouter ici l'extrait « événement » de la conversion :
+       <script>gtag('event', 'conversion', {'send_to': 'AW-18503417665/LIBELLE_DE_CONVERSION'});</script> -->
 </head>
 <body class="thanks">
   <main id="main" class="thanks-wrap">
